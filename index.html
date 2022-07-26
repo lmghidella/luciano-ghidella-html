@@ -1,47 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilo.css">
-    <title>Tecno Agro</title>
+    <title>tecnoagro.com</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body class="gridPadre">
-    <header> 
-        <h1>Tecno-Agro</h1>
-    </header>
-    <nav>
-        <ul>
-            <a href="index.html">Inicio</a>
-            <a href="pages/empresa.html">Empresa</a>
-            <a href="pages/productos.html">Productos</a>
-            <a href="pages/servicios.html">Servicios</a>
-            <a href="pages/contacto.html">Contacto</a>
-        </ul>
-    </nav>
-    <main>
-        <div class="encabezado">
-        <h2>Nos dedicamos a soluciones de agricultura de precisión</h2>
+<body class="bodyPadreGrid">
+    <!-- EL HEADER LO VAMOS A MAQUETAR CON FLEXBOX -->
+    <header>
+        <div>
+            <img class="logo" src="img/logo2.png" alt="">
         </div>
-    </main>
-    <section class ="Productos">
-        <img src="/img/dosificador.png" alt="">
-        <img src="/img/monitoreo.jpg" alt="">  
-        <img src="img/banderillero.jpg" alt="">
 
+        <nav class="botonera">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pages/empresa.html">Empresa</a></li>
+                <li><a href="pages/productos.html">Productos</a></li>
+                <li><a href="pages/servicios.html">Servicios</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- SECCIÓN SERVICIOS -->
+    <div class="contenedorImagen">
+        <img class="imagenEncabezado" src="img/tractor3.jpg" alt="">
+    </div>
+
+    <section id="servicios">
+
+        <div class="contenedor">
+            <h1>Carrousel con principales servicios</h1>
+            <h2>Servicio de pulverización por ha</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit dicta quod aut ex tempora suscipit porro quas, debitis asperiores totam illum quibusdam laboriosam nostrum culpa iste minima facere provident sed.
+            </p>
+        </div>
     </section>
-    <section class="Servicios">
-        <h2>Carrousel de Servicios</h2>
+
+    <!-- SECCION GALERÍA DE IMÁGENES -->
+
+    <section id="galeria">
+        <div class="contenedor">
+            <h2>Principales productos</h2>
+            <div class="imagenContenedor">
+                <div class="banderillero">
+                    <img class="imagenGaleria imagenUno" src="img/banderillero.jpg" alt="">
+                    <p>Banderillero Satelital</p>
+                </div>
+                <div class="dosificador">
+                    <img class="imagenGaleria imagenUno" src="img/dosificador.png" alt="">
+                    <p>Dosificador</p>
+                </div>
+                <div class="Monitoreo de siembra">
+                    <img class="imagenGaleria imagenUno" src="img/monitoreo.jpg" alt="">
+                    <p>Monitoreo de siembra</p>
+                </div>
+            </div>
+        </div>
     </section>
-    <aside>
-        <h2>Publicidad</h2>
-        <img src="/img/agroactiva.jpg" alt="">
-    </aside>
-    <footer>
-        <p>Dirección: Pedro Chutro 419. Haedo</p><!--Comentario-->
-        <p>Telefono: 4444-4444</p><!--Comentario-->
-        <p>mail: info@tecnoagro.com.ar</p><!--Comentario-->
+
+    <!-- SECCION CONTACTO -->
+
+    <section id="contacto" class="contenedor">
+        <h2>Contacto</h2>
+        <p>En breve un asesor se estará comunicando con vos</p>
+        <form class="formulario">
+            <div class="contenedorInput">
+                <input class="campo" type="text" placeholder="Ingrese su nombre">
+                <input class="campo" type="text" placeholder="Ingrese su apellido">
+                <input class="campo" type="email" placeholder="Ingrese su email">
+            </div>
+            <textarea class="campo" name="mensaje" id="mensaje" cols="30" rows="10"
+                placeholder="Ingrese su mensaje"></textarea>
+            <input class="boton" type="submit">
+            <input class="boton" type="reset">
+        </form>
+    </section>
+
+    <div class="botonWhatsApp">
+        <img src="img/logoWhatsapp.png" alt="">
+    </div>
+
+    <!-- SECCIÓN FOOTER -->
+
+    <footer id="footer">
+        <nav>
+            <ul>
+                <li><i class="fab fa-instagram"></i><a href="">Instagram</a></li>
+                <li><i class="fab fa-facebook"></i><a href="">Facebook</a></li>
+                <li><i class="fab fa-twitter"></i><a href="">Twitter</a></li>
+            </ul>
+        </nav>
+        <div>
+            <p>Dirección: Pedro Chutro 419. Haedo</p><!--Comentario-->
+            <p>Telefono: 4444-4444</p><!--Comentario-->
+            <p>mail: info@tecnoagro.com.ar</p><!--Comentario-->
+        </div>
     </footer>
+
+    <script src="https://kit.fontawesome.com/ac484d389e.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
